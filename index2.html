@@ -1,0 +1,222 @@
+Grievance Form code:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievence Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 200px;
+            /* background-image: url(https://th.bing.com/th/id/OIP.6t4XjAoB4VGhHkgx0iAA9AHaFS?w=1200&h=857&rs=1&pid=ImgDetMain.png);
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }   
+
+        header{
+
+            margin: auto;
+            
+        }
+
+        table{
+
+            padding: 20px;
+        }
+
+        form {
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-shadow: 0px 5px 10px rgba(49, 41, 41, 0.1);
+            background-color: rgba(241, 250, 252, 0.726);
+            
+
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .gender-selaction {
+
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+
+        }
+
+        input[type="radio"] {
+
+            transform: scale(1.5);
+        }
+
+        select,
+        button {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 9px;
+        }
+
+       
+
+        input {
+
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 9px;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        function data() {
+
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("male").value;
+            var c = document.getElementById("female").value;
+            var d = document.getElementById("user-email").value;
+            var e = document.getElementById("no").value;
+            var f = document.getElementById("address").value;
+            var g = document.getElementById("sub").value;
+            var h = document.getElementById("dis").value;
+
+
+            if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "" || h == "") {
+
+                alert("All fields are mandetory.");
+                return false;
+            }
+
+            else if (!/^[a-zA-Z\s]+$/.test(a)) {
+                alert("Name must only contain letters and spaces!");
+                return false;
+            }
+
+
+
+            else if (!/^[a-zA-Z\s]+$/.test(g)) {
+                alert("Subject of grievence must only contain letters and spaces!");
+                return false;
+            }
+
+
+            else if (e.length < 10 || length > 10) {
+
+                alert("Contact number should be of 10 digits! Please enter valid number.");
+                return false;
+            }
+            else if (isNaN(e)) {
+
+                alert("Only numbers are allowed! Please enter valid number.");
+                return false;
+            }
+
+            else if (!/^[a-zA-Z\s]+$/.test(h)) {
+                alert("Discription of grievence must only contain letters and spaces!");
+                return false;
+            }
+            else{
+                true;
+            }
+
+
+        }
+
+
+
+    </script>
+
+<header>
+    <table>
+        <tr>
+            <th>भारत सरकार </th>
+            <th>| Government Of India</th>
+        </tr>
+    </table>
+    <table id="table2">
+        <td><a href="https://yas.gov.in/" target="_blank"><img src="https://yas.gov.in/sites/all/themes/youthaffair/logo1.png"  alt="Satyamev jayate"></a></td>
+        <td>
+    <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/akam.jpg" alt="Azadi ka Amrit Mohotsav"></td>
+    <td>
+        <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/g20-logo.png" alt="G20">
+    
+    </td>
+    <td>
+        <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/swach-bharat.png" alt="Swaccha Bharat">
+    </td>
+    </table>
+    </header>
+
+    <form onsubmit="return data()" action="grievenceFinal.html">
+
+        <h2 style="text-align: center;">Grievence Form</h2>
+
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <div class="gender-selaction">
+            <label for="gender">Gender:</label><br>
+            <lable for="male">Male</lable>
+            <input type="radio" id="male" name="gender" value="male">
+            <lable for="female">Female</lable>
+            <input type="radio" id="female" name="gender" value="female">
+        </div><br>
+
+        <label for="no">Contact Number:</label>
+        <input type="text" id="no" name="no" placeholder="Enter your contact number">
+
+
+        <label for="user-email">Email Address:</label>
+        <input type="email" id="user-email" name="user_email" placeholder="Enter your email"><br>
+
+
+        <label for="address">Residential Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your residential address">
+
+
+        <label for="sub">Subject of Grievence:</label>
+        <input type="text" id="sub" name="sub" placeholder="Enter the Subject of grievence">
+
+
+        <label for="dis">Description of Grievance:</label>
+        <input type="text" id="dis" name="dis" style="height: 70px;" placeholder="Please provide a detailed description of the issue">
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
+

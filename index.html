@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Govt of India | Sports Department</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/styling.css">
+</head>
+<style>
+    body {
+        padding: 20px;
+        margin: auto;
+        background-color: aliceblue;
+    }
+
+    #table2 {
+        margin: auto;
+    }
+
+    #table1 {
+        margin: auto;
+    }
+
+    #navg {
+        margin: auto;
+        background-color: #333333;
+        color: aliceblue;
+        padding: 1px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    div nav ul li {
+        padding: 30px;
+        list-style: none;
+        display: inline;
+    }
+
+    div nav ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    div nav ul li a:hover {
+        transition: 1s;
+        transform: scale(1.02);
+    }
+
+    div nav ul {
+        text-align: center;
+    }
+
+    #Ministers {
+        border-radius: 20px;
+        background-color: rgb(223, 157, 14);
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.801);
+    }
+
+    #MinistersDiv:hover {
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        border-radius: 10px;
+        background-color: #33333330;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 10px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(1.2);
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+
+    .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        text-shadow: #000000;
+    }
+
+    .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+
+    .navlink:hover {
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    #contactSection{
+        font-size: larger;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+</style>
+<header>
+    <table id="table1">
+        <tr>
+            <th>भारत सरकार</th>
+            <th>| Government Of India</th>
+        </tr>
+    </table>
+    <table id="table2">
+        <td>
+            <a href="https://yas.gov.in/" target="_blank"><img
+                    src="https://yas.gov.in/sites/all/themes/youthaffair/logo1.png" alt="Satyamev jayate" /></a>
+        </td>
+        <td>
+            <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/akam.jpg" alt="Azadi ka Amrit Mohotsav" />
+        </td>
+        <td>
+            <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/g20-logo.png" alt="G20" />
+        </td>
+        <td>
+            <img src="https://yas.gov.in/sites/all/themes/youthaffair/images/swach-bharat.png" alt="Swaccha Bharat" />
+        </td>
+    </table>
+    <div id="navg">
+        <nav>
+            <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="#">About Us</a></li>
+                <li><a class="navlink" href="#">Department of Youth Affairs</a></li>
+                <li><a class="navlink" href="fy2.html">Department of Sports</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div id="MinistersDiv">
+        <table id="Ministers" style="margin: auto">
+            <tr>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Mansukh_Mandaviya_photo_2.png"
+                        alt="Dr. Mandavia" height="200px" style="border-radius: 20px" />
+                </td>
+                <td style="padding-right: 10px">
+                    <p>Dr. Mansukh Mandavia</p>
+                    <p>Hon'ble Youth Affairs and Sports Minister</p>
+                </td>
+                <td style="padding-left: 10px">
+                    <img src="https://indianexpress.com/wp-content/uploads/2024/03/Raksha_Khadse-removebg-preview.png"
+                        alt="Smt. Khadse" style="height: 200px" />
+                </td>
+                <td style="padding-right: 20px">
+                    <p>Smt. Raksha Khadse</p>
+                    <p>
+                        Hon'ble Youth Affairs and Sports Minister <br />
+                        of State
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br /><br />
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://yas.gov.in/sites/default/files/styles/320_300/public/Chess%20%20Champions%20%20801x373-min.jpg?itok=VoFNIH7W"
+                style="width: 100%; border-radius: 20px" />
+            <div class="text">Chess</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://yas.gov.in/sites/default/files/styles/320_300/public/PARIS%20PARALYMPICS%20%28801%20x%20373%20px%29-images-0.jpg?itok=kJXimgd0"
+                style="width: 100%; border-radius: 20px" />
+            <div class="text">Paralympics Gold</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://yas.gov.in/sites/default/files/styles/320_300/public/banner2%281%29.jpg?itok=W7RiEZi3"
+                style="width: 100%; border-radius: 20px" />
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://yas.gov.in/sites/default/files/styles/320_300/public/Copy%20of%20Asian%20%20Champions%20%20801x373-min.jpg?itok=sbQTRibS"
+                style="width: 100%; border-radius: 20px" />
+            <div class="text">Men's Hockey</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://yas.gov.in/sites/default/files/styles/320_300/public/PARIS%20PARALYMPICS%20%28801%20x%20373%20px%29-images-1.jpg?itok=V0-2uZU9"
+                style="width: 100%; border-radius: 20px" />
+            <div class="text">Paralympics Silver</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"> </span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <div>
+        <section>
+            <span id="news">
+                <span> <img src="https://cdn.pixabay.com/photo/2017/06/10/07/22/news-2389226__180.png" alt="NEWS"
+                        style="float: left; border-radius: 100px; height: 70px; margin-top: -15px; ">
+                    <h3 style="font-size: xx-large; margin-left: 90px;">Latest News : </h3>
+                </span>
+                <ul id="newsList">
+                    <li id="newsLink">
+                        <a href="https://yas.gov.in/youth-affairs/corrigendum-logistical-arrangement-visit-20-member-youth-delegation-poland-india-19th"
+                            target="_blank">Corrigendum for Logistical arrangement for the visit of 20- member Youth
+                            Delegation from Poland to India from 19th - 27th</a>
+                    </li> <br>
+                    <li id="newsLink"><a
+                            href="https://yas.gov.in/sports/application-post-project-officermonitoringassistant-project-officerinfratechnical-leadgeo"
+                            target="_blank">Application for the post of Project Officer(Monitoring),Assistant Project
+                            Officer(Infra),Technical Lead(Geo-tagging),Project Co-Ordinator(Geo-Tagging-Zonal
+                            Coordination),Technical Co-ordinator(Geo-Tagging-Technical)in Dept. of Sports, MoYAS</a>
+                    </li>
+                    <br>
+                    <li id="newsLink"><a
+                            href="https://yas.gov.in/youth-affairs/corrigendum-against-tender-notice-fno-j-17011-778-2024-ic-dated-6th-december-2024"
+                            target="_blank">Corrigendum against Tender Notice F.No. J-17011-778-2024-IC dated 6th
+                            December 2024</a></li>
+                    <br>
+                    <li id="newsLink"> <a
+                            href="https://yas.gov.in/youth-affairs/engagement-one-consultant-media-lead-ministry-youth-affairs-and-sports-functional"
+                            target="_blank">Engagement of one Consultant (Media Lead) in the Ministry of Youth Affairs
+                            and Sports on functional ground
+                        </a>
+                    </li>
+                    <br>
+                    <li id="newsLink"><a
+                            href="https://yas.gov.in/sports/application-post-project-officermonitoringassistant-project-officerinfratechnical-leadgeo"
+                            target="_blank">Application for the post of Project Officer(Monitoring),Assistant Project
+                            Officer(Infra),Technical Lead(Geo-tagging),Project Co-Ordinator(Geo-Tagging-Zonal
+                            Coordination),Technical Co-ordinator(Geo-Tagging-Technical)in Dept. of Sports, MoYAS
+                        </a>
+                    </li>
+                </ul>
+            </span>
+
+            <span id="moments">
+                <img src="/achievement-icon-white-on-blue-background-vector-3451719.jpg" alt="image"
+                    style="float: left; border-radius: 100px; height: 70px; padding: 6px; background-color:white; margin-bottom: 20px ;">
+                <h3 style="font-size: xx-large; margin-left: 100px; margin-bottom: 20px;">Proud Moments :</h3>
+                <ul id="achList">
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/">India Women Volleyball team won Silver Medal & Men secured Bronze
+                            Medal in the BRICS Games at Johannesburg, South Africa.</a>
+                    </li> <br>
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/sites/default/files/COMMONWEALTH%202018%20MEDALLIST_1.pdf">2018
+                            Commonwealth Games, 26 Gold, 20 Silver and 20 Bronze</a>
+                    </li> <br>
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/">22nd Asian Athletics Championships 2017, 12 Gold and 5 Silver and
+                            12 Bronze</a>
+                    </li> <br>
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/sites/default/files/2016%20Rio%20Olympics.pdf">2016 Rio Olympics, 1
+                            Silver and 1 Bronze Medals</a>
+                    </li><br>
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/"> 2014 Asian Games, 11 Gold and 10 Silver and 36 Bronze</a>
+                    </li> <br>
+                    <li id="achLink">
+
+                        <a href="https://yas.gov.in/">2014 Commonwealth Games, 15 Gold and 30 Silver and 19 Bronze</a>
+                    </li> <br>
+                    <li id="achLink">
+                        <a href="https://yas.gov.in/sites/default/files/3037530130.pdf">2012 London Olympics, 2 Silver
+                            and 4 Bronze Medals</a>
+                    </li> <br> <br>
+                </ul>
+            </span>
+
+        </section>
+
+        <hr><br>
+        <hr> <br>
+    </div>
+    <div style="text-align: center; font-size: large;">
+        <img src="/Screenshot 2025-01-28 171304.png" alt="nsdf"
+            style="border-radius: 20px; margin-top: 40px; width: 80%;">
+
+        <p id="nsdfLink"><a href="https://yas.nic.in/sports/national-sports-development-fund-nsdf"
+                style="text-decoration: none;color: #000000; margin-top: -100px;">Know More About NSDF</a></p>
+                <br>
+                <hr>
+    </div>
+
+    <span id="nsdfLink" style="float: right; margin-right: 60px; background-color: rgb(243, 208, 184); padding-left:60px ; padding-right: 30px; border-radius: 30px; padding-top: 20px; padding-bottom: -10px;">
+        <span >
+            <img src="https://www.pngall.com/wp-content/uploads/5/Application-PNG-Free-Image.png" alt="icon"
+                style="height: 80px; float: left; padding: 20px; margin-top: -50px;">
+            <p style="font-size: xx-large;">
+                Online Application
+            </p>
+        </span>
+
+        <p id="nsdfLink">
+            <a href="https://dbtyas-sports.gov.in/"> <img
+                    src="https://yas.gov.in/sites/default/files/styles/home_middle_block_image/public/5571144.jpg?itok=hYGjjbq3"
+                    alt="Online Application" style="border-radius: 30px;" width="500px"> </a>
+        </p>
+
+    </span>
+    <span id="annualRep" style="float: left; width: 800px; padding-bottom: 40px;">
+
+        <span>
+            <a href="https://yas.gov.in/documents/annual-reports">
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/013/278/897/non_2x/an-editable-design-icon-of-financial-report-vector.jpg"
+                    alt="annual report" style="height: 80px ; padding: 20px; float: left; border-radius: 100px;"></a>
+
+            <h3 style="font-size: xx-large; margin-left: 80px; padding-left: 20px; ">Annual Report</h3>
+
+        </span>
+        <a href="https://yas.gov.in/documents/annual-reports"><img
+                src="https://www.pngall.com/wp-content/uploads/1/Sports-PNG-Image.png" alt="annual report"
+                style="height: 300px;"></a>
+        <br>
+        <a href="https://yas.gov.in/documents/annual-reports" style="margin-left: 250px;">click here to see Annual
+            Report</a>
+    </span>
+
+    <div style="padding-top: 550px;">
+        <section style="background-color: rgba(215, 150, 231, 0.784); padding: 20px; border-radius: 30px;">
+            <span style="float: left;"><img src="https://www.pngplay.com/wp-content/uploads/8/Video-Player-Icon-Transparent-PNG.png" alt="icon" style="height: 80px; padding: 10px;"></span>
+            
+            <h3 style="font-size: xx-large;">Hightlight Videos :</h3>
+            <br><br>
+        <span style="float: right; margin-right: 80px;">
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/_mMDCkj1Bl4" title="FIT INDIA CYCLOTHON 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </span>
+
+        <span style="float: inline-start; margin-left: 40px;">
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/tl0WM1FBNzw" title="कोरोना जन आंदोलन" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </span>
+        <span style="margin-left: 80px;">
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/NjEmyLhdkgY" title="NSS Contingent Marching on Rajpath | Republic Day Parade 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </span>        
+</section>
+    </div>
+
+
+<div id="contactSection">
+    <p>For any Grievance or Complaint</p>
+    <br>
+    <p>Feel free to Contact us</p>
+    <a href="/index2.html">Grievance Form</a>
+</div>
+
+
+
+    <br><br>
+
+</body>
+<footer style="background-color: #333333; padding: 5px; text-align: center; bottom: 0; width: 100%;">
+    <p style="color: white; font-family: Arial, sans-serif;">Government of India</p>
+</footer>
+
+<script>
+    var slideIndex = 1; // Start with the first slide
+    var slideTimer; // Timer variable
+
+    // Initialize the slideshow
+    function initSlides() {
+        showSlides(slideIndex); // Display the first slide
+        slideTimer = setInterval(() => plusSlides(1), 5000); // Change slides every 5 seconds
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        // Handle wrapping around
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        // Hide all slides
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Remove active class from all dots
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // Show the current slide and update the dot
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    // Move to the next/previous slide and reset the timer
+    function plusSlides(n) {
+        clearInterval(slideTimer); // Stop the current interval
+        slideIndex += n;
+        showSlides(slideIndex);
+        slideTimer = setInterval(() => plusSlides(1), 5000); // Restart the interval
+    }
+
+    // Move to a specific slide and reset the timer
+    function currentSlide(n) {
+        clearInterval(slideTimer); // Stop the current interval
+        slideIndex = n;
+        showSlides(slideIndex);
+        slideTimer = setInterval(() => plusSlides(1), 5000); // Restart the interval
+    }
+
+    // Start the slideshow when the page loads
+    window.onload = initSlides;
+</script>
+
+</html>
